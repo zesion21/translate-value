@@ -1,0 +1,9 @@
+<!-- <router-outlet></router-outlet> -->
+
+
+<app-child></app-child>
+
+<app-fruit-list [Banana]="banana" (noticeEventEmiter)="notice.noticeThis($event)"></app-fruit-list>
+<app-notice #notice></app-notice>
+<button (click)="pushToNotice()">viewChild</button>
+<button (click)="busAppbtn()">busAppbtn</button>
